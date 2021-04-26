@@ -1,0 +1,150 @@
+body {
+  background-color: #202F1F;
+  color: #c4a000;
+  width: auto;
+  height: auto;
+}
+
+h2 {
+  text-shadow: #088 1px 1px 1px;
+  font-size: 20pt;
+  color: #c4a400;
+  padding-left: 20px;
+  margin-bottom: 2px;
+  text-align: left;
+  letter-spacing: 0.15em;
+  width: 30em;
+}
+
+h5 {
+  text-shadow: #088 1px 1px 1px;
+  font-size: 16pt;
+  color: #c4a444;
+  padding-left: 2px;
+  margin-bottom: 2px;
+  text-align: left;
+  letter-spacing: 0.15em;
+  width: 30em;
+}
+
+video {
+
+  height: 360px;
+  width: 480;
+  margin: 0 0;
+}
+
+#playlist {
+  width: 300px;
+  height: auto;
+  font-size: 12pt;
+  font-family: Helvetica, Trebuchet, Verdana, sans-serif;
+  text-shadow: #000 1px 1px 1px;
+  background-color: transparent;
+  text-align: left;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#playlist li,
+#playlist ul li {
+  background-image: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#playlist li a {
+  color: goldenrod;
+  background-color: transparent;
+  padding: 7px 5px;
+  display: block;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+#playlist li a:hover {
+  font-weight: bold;
+  color: #bbb;
+  text-decoration: none;
+}
+
+#playlist .active a {
+  color: #ccc;
+  font-size: 14pt;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#playlist .active a:before {
+  content: "\25B6";
+  color: #ccc;
+  font-style: normal;
+  padding-right: 8px;
+}
+
+input.customSearch {
+  outline: none;
+}
+
+input.customSearch[type=search] {
+  text-shadow: #
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 150%;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  color: #c4a000;
+  border: 2px solid #c4a000;
+  padding: 4px 3px 4px 32px;
+  width: 150px;
+
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+
+input.customSearch[type=search]:focus {
+  width: 280px;
+  background: #ccc;
+  color: #333;
+  border: 2px solid #242;
+
+  -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+  -moz-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+  box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+}
+
+
+input.customSearch:-moz-placeholder {
+  color: #999;
+}
+
+input.customSearch::-webkit-input-placeholder {
+  color: #999;
+}
+
+.buttontop {
+  border: 1px inset #c4a000;
+  width: 100px;
+  height: 40px;
+  line-height: 1;
+  margin-bottom: 5px;
+  font-size: 24pt;
+  text-align: center;
+  color: #efe;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 0px;
+  background-image: linear-gradient(#202F1F, #474F1F);
+  margin-top: 12px;
+}
+
+.buttontop:hover {
+  background-image: linear-gradient(#262, #373);
+}
