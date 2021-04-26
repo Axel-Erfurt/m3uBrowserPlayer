@@ -5,39 +5,16 @@ body {
   height: auto;
 }
 
-h2 {
-  text-shadow: #088 1px 1px 1px;
-  font-size: 20pt;
-  color: #c4a400;
-  padding-left: 20px;
-  margin-bottom: 2px;
-  text-align: left;
-  letter-spacing: 0.15em;
-  width: 30em;
-}
-
-h5 {
-  text-shadow: #088 1px 1px 1px;
-  font-size: 16pt;
-  color: #c4a444;
-  padding-left: 2px;
-  margin-bottom: 2px;
-  text-align: left;
-  letter-spacing: 0.15em;
-  width: 30em;
-}
-
 video {
-
   height: 360px;
-  width: 480;
+  width: 640px;
   margin: 0 0;
 }
 
 #playlist {
-  width: 300px;
+  width: auto;
   height: auto;
-  font-size: 12pt;
+  font-size: 11pt;
   font-family: Helvetica, Trebuchet, Verdana, sans-serif;
   text-shadow: #000 1px 1px 1px;
   background-color: transparent;
@@ -59,19 +36,19 @@ video {
   background-color: transparent;
   padding: 7px 5px;
   display: block;
-  padding-left: 10px;
+  padding-left: 2px;
   text-decoration: none;
 }
 
 #playlist li a:hover {
   font-weight: bold;
-  color: #bbb;
+  color: green;
   text-decoration: none;
 }
 
 #playlist .active a {
   color: #ccc;
-  font-size: 14pt;
+  font-size: 12pt;
   font-weight: bold;
   font-style: italic;
 }
@@ -92,7 +69,7 @@ input.customSearch[type=search] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
   font-family: inherit;
-  font-size: 150%;
+  font-size: 100%;
   margin-left: 10px;
   margin-top: 10px;
   background-color: transparent;
@@ -130,21 +107,9 @@ input.customSearch::-webkit-input-placeholder {
   color: #999;
 }
 
-.buttontop {
-  border: 1px inset #c4a000;
-  width: 100px;
-  height: 40px;
-  line-height: 1;
-  margin-bottom: 5px;
-  font-size: 24pt;
-  text-align: center;
-  color: #efe;
-  text-shadow: 1px 1px 1px #000;
-  border-radius: 0px;
-  background-image: linear-gradient(#202F1F, #474F1F);
-  margin-top: 12px;
-}
-
-.buttontop:hover {
-  background-image: linear-gradient(#262, #373);
+#videodiv {
+    position: fixed;
+    top: 50px;
+    left: 350px;
+    overflow: auto;
 }

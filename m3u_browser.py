@@ -54,9 +54,10 @@ html_top = """<!DOCTYPE html>
     <script src="player.js" async></script>
   </head>
   <body>
-  <table>
-  <tr>
-  <td>
+    <div id="videodiv">
+             <video autoplay controls='none' id='myvideo' preload='none' tabindex='0'>
+        <source id="primarysrc" src='none' type="application/x-mpegURL"/></video>
+        </div>
   <div id="tvlist">
      <input class="customSearch search" type="search" placeholder="suchen ..." />
 <br>
@@ -65,14 +66,6 @@ html_top = """<!DOCTYPE html>
 
 html_bottom = """</ul>
     </div>
-     </td>
-       <td VALIGN=TOP>
-      <video autoplay controls='none' id='myvideo' preload='none' tabindex='0'>
-        <source id="primarysrc" src='none' type="application/x-mpegURL"/></video>
-<br>
- </td>
-     </tr>
-     </table>
   </body>
 </html>
 """
