@@ -8,7 +8,10 @@ import webbrowser
 result = []
 mytv_list = []
 m3u_file = sys.argv[1]
-mytv_webfile = "m3uTV.html"
+if len(sys.argv) > 2:
+    mytv_webfile = sys.argv[2]
+else:
+    mytv_webfile = "m3uTV.html"
 mytv_text = open(m3u_file, 'r').read().splitlines()
 
 
@@ -59,7 +62,7 @@ html_top = """<!DOCTYPE html>
         <source id="primarysrc" src='none' type="application/x-mpegURL"/></video>
         </div>
   <div id="tvlist">
-     <input class="customSearch search" type="search" placeholder="suchen ..." />
+     <input class="customSearch search" type="search" placeholder="find ..." />
 <br>
 <ul id='playlist' class='list'>
 """
