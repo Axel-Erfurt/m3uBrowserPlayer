@@ -12,7 +12,7 @@ video {
 }
 
 #playlist {
-  width: auto;
+  width: 200px;
   height: auto;
   font-size: 11pt;
   font-family: Helvetica, Trebuchet, Verdana, sans-serif;
@@ -109,7 +109,14 @@ input.customSearch::-webkit-input-placeholder {
 
 #videodiv {
     position: fixed;
-    top: 50px;
+    top: 70px;
     left: 350px;
+    overflow: auto;
+}
+
+#findfield {
+    position: fixed;
+    top: 10px;
+    left: 340px;
     overflow: auto;
 }

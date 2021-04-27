@@ -26,7 +26,7 @@ function initvideo(){
         e.preventDefault();
         link = $(this);
         current = link.parent().index();
-        window.scrollTo(0,0)
+       // window.scrollTo(0,0)
         runvideo(link, video[0]);
     });
     video[0].addEventListener('ended',function(e){
@@ -37,7 +37,7 @@ function initvideo(){
         }else{
             link = playlist.find('a')[current];
         }
-        window.scrollTo(0,0)
+        //window.scrollTo(0,0)
         runvideo($(link),video[0]);
     });
 }

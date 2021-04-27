@@ -62,7 +62,7 @@ html_top = """<!DOCTYPE html>
         <source id="primarysrc" src='none' type="application/x-mpegURL"/></video>
         </div>
   <div id="tvlist">
-     <input class="customSearch search" type="search" placeholder="find ..." />
+         <input  id="findfield" class="customSearch search" type="search" placeholder="find ..." />
 <br>
 <ul id='playlist' class='list'>
 """
