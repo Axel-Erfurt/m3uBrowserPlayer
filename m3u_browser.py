@@ -49,7 +49,7 @@ html_top = """<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>Movie Player</title>
+    <title>TV Player</title>
     <script type="text/javascript" src="list.min.js"></script>
     <script type="text/javascript" src="jquery-1.10.1.js"></script>
      <script type="text/javascript" src="hls.js"></script>
@@ -58,7 +58,7 @@ html_top = """<!DOCTYPE html>
   </head>
   <body>
     <div id="videodiv">
-             <video autoplay controls='none' id='myvideo' preload='none' tabindex='0'>
+             <video controls='none' id='myvideo' preload='none' tabindex='0'>
         <source id="primarysrc" src='none' type="application/x-mpegURL"/></video>
         </div>
   <div id="tvlist">

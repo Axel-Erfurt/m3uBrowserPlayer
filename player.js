@@ -9,6 +9,8 @@
 
 var video;
 var playlist;
+var url;
+var hls;
 var tracks;
 var current;
 var win = document.getElementById("top");
@@ -46,10 +48,14 @@ function runvideo(link, video){
     $(video).find('#primarysrc').attr('src', link.attr('href'));
     par = link.parent();
     par.addClass('active').siblings().removeClass('active');
-    var hls = new Hls();
-    var url = link.attr('href')
+    hls = new Hls();
+    url = link.attr('href')
     hls.loadSource(url);
     hls.attachMedia(video);
+     hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+          video.muted = false;
+          video.play();
+    });
     document.title = par.text();
 //    window.alert(link.attr('href'));
 }
