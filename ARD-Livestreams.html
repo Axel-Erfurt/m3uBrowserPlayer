@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>TV Player</title>
+    <script type="text/javascript" src="list.min.js"></script>
+    <script type="text/javascript" src="jquery-1.10.1.js"></script>
+     <script type="text/javascript" src="hls.js"></script>
+    <link rel="stylesheet" href="player.css" media="all">
+    <script src="player.js" async></script>
+  </head>
+  <body>
+    <div id="videodiv">
+             <video controls='none' id='myvideo' preload='none' tabindex='0'>
+        <source id="primarysrc" src='none' type="application/x-mpegURL"/></video>
+        </div>
+  <div id="tvlist">
+         <input  id="findfield" class="customSearch search" type="search" placeholder="find ..." />
+<br>
+<ul id='playlist' class='list'>
+<li><a class='chlist' href='https://mcdn.daserste.de/daserste/de/master.m3u8'>Das Erste</a></li>
+<li><a class='chlist' href='https://mcdn.br.de/bfs_sued/de/master.m3u8'>BR Fernsehen</a></li>
+<li><a class='chlist' href='https://hrhls.akamaized.net/hls/live/2024525/hrhls/index.m3u8'>hr-fernsehen</a></li>
+<li><a class='chlist' href='https://mdrtvsnhls.akamaized.net/hls/live/2016928/mdrtvsn/master.m3u8'>MDR</a></li>
+<li><a class='chlist' href='https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8'>NDR Fernsehen</a></li>
+<li><a class='chlist' href='https://rbhlslive.akamaized.net/hls/live/2020435/rbfs/master.m3u8'>Radio Bremen</a></li>
+<li><a class='chlist' href='https://rbblive-lh.akamaihd.net/i/rbb_brandenburg@349369/master.m3u8'>rbb</a></li>
+<li><a class='chlist' href='https://srlive24-lh.akamaihd.net/i/sr_universal02@107595/master.m3u8'>SR</a></li>
+<li><a class='chlist' href='https://swrbwhls-i.akamaihd.net/hls/live/667638/swrbwd/master.m3u8'>SWR</a></li>
+<li><a class='chlist' href='https://mcdn.wdr.de/wdr/wdrfs/de/master.m3u8'>WDR</a></li>
+<li><a class='chlist' href='https://onelivestream-lh.akamaihd.net/i/one_livestream@568814/master.m3u8'>ONE</a></li>
+<li><a class='chlist' href='https://brlive-lh.akamaihd.net/i/bralpha_germany@119899/master.m3u8'>ARD-alpha</a></li>
+<li><a class='chlist' href='https://artelive-lh.akamaihd.net/i/artelive_de@393591/master.m3u8'>arte</a></li>
+<li><a class='chlist' href='https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8'>3sat</a></li>
+<li><a class='chlist' href='https://kikageohls.akamaized.net/hls/live/2022693/livetvkika_de/master.m3u8'>KiKA</a></li>
+<li><a class='chlist' href='https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8'>Phoenix</a></li>
+<li><a class='chlist' href='https://tagesschau-lh.akamaihd.net/i/tagesschau_1@119231/master.m3u8'>tagesschau24</a></li>
+<li><a class='chlist' href='https://dwstream72-lh.akamaihd.net/i/dwstream72_live@123556/master.m3u8'>Deutsche Welle</a></li>
+</ul>
+    </div>
+  </body>
+</html>
